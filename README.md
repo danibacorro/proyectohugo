@@ -1,1 +1,1 @@
-# proyectohugo
+# Proyecto páginas Hugo
