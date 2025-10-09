@@ -15,7 +15,7 @@ git add .
 if git diff-index --quiet HEAD --; then
   echo -e "\nSin cambios que subir.\n"
 else
-  git commit -m "\nActualización del proyecto: $(date)\n"
+  git commit -m "Actualización del proyecto: $(date)"
   git push origin main
   echo -e "\nProyecto actualizado en GitHub.\n"
 fi
@@ -33,7 +33,7 @@ git add .
 if git diff-index --quiet HEAD --; then
   echo -e "\nSin cambios que subir.\n"
 else
-  git commit -m "\nActualización del sitio: $(date)\n"
+  git commit -m "Actualización del sitio: $(date)"
   git push origin main
   echo -e "\nPágina web sincronizada en GitHub. Puedes acceder a ella aquí: https://danibacorro.github.io/blogdani/\n"
 fi
