@@ -7,35 +7,35 @@
 set -e
 
 # Subir proyecto
-echo "Sincronizando proyecto en GitHub..."
+echo "\nSincronizando proyecto en GitHub...\n"
 cd ~/proyectohugo
 git add .
 
 # Solo hace commit si hay cambios, necesario con set -e
 if git diff-index --quiet HEAD --; then
-  echo "Sin cambios que subir."
+  echo "\nSin cambios que subir.\n"
 else
-  git commit -m "Actualización del proyecto: $(date)"
+  git commit -m "\nActualización del proyecto: $(date)\n"
   git push origin main
-  echo "Proyecto actualizado en GitHub."
+  echo "\nProyecto actualizado en GitHub.\n"
 fi
 
 # Regenerar página web
-echo "Creando página web..."
+echo "\nCreando página web...\n"
 hugo -d ../blogdani/docs
 
 # Subir página
-echo "Sincronizando página web..."
+echo "\nSincronizando página web...\n"
 cd ../blogdani/docs
 git add .
 
 # Solo commits con cambios
 if git diff-index --quiet HEAD --; then
-  echo "Sin cambios que subir."
+  echo "\nSin cambios que subir.\n"
 else
-  git commit -m "Actualización del sitio: $(date)"
+  git commit -m "\nActualización del sitio: $(date)\n"
   git push origin main
-  echo "Página web sincronizada en GitHub. Puedes acceder a ella aquí: https://danibacorro.github.io/blogdani/"
+  echo "\nPágina web sincronizada en GitHub. Puedes acceder a ella aquí: https://danibacorro.github.io/blogdani/\n"
 fi
 
 # Volver al directorio raíz
