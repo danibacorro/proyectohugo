@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/blogdani/</loc>
+    <lastmod>2025-10-09T12:17:59+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogdani/posts/mongo/</loc>
+    <lastmod>2025-10-09T12:17:59+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogdani/posts/</loc>
+    <lastmod>2025-10-09T12:17:59+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogdani/posts/mariadb/</loc>
+    <lastmod>2025-10-03T20:01:06+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogdani/posts/postgres/</loc>
+    <lastmod>2025-10-03T20:01:03+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogdani/contacto/</loc>
+    <lastmod>2025-10-03T19:58:21+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogdani/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blogdani/tags/</loc>
+  </url>
+</urlset>

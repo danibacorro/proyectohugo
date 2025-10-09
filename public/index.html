@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+	<meta name="generator" content="Hugo 0.131.0"><script src="/blogdani/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blogdani/livereload" data-no-instant defer></script>
+		
+		
+  
+
+
+		
+		<meta property="og:url" content="http://localhost:1313/blogdani/">
+  <meta property="og:site_name" content="Blog de Dani">
+  <meta property="og:title" content="Blog de Dani">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="">
+
+		<title>Blog de Dani</title>
+
+		
+		<link rel="stylesheet" href="/blogdani/css/style.css">
+		<link rel="stylesheet" href="/blogdani/css/fonts.css">
+		
+		<link rel="icon" href="/blogdani/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/blogdani/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/blogdani/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/blogdani/images/apple-touch-icon.png">
+
+		
+		<link href="/blogdani/index.xml" rel="alternate" type="application/rss+xml" title="Blog de Dani" />
+
+		<script src="/blogdani/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/blogdani/">
+					
+						<h1 class="nav-title">Blog de Dani</h1>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/blogdani/contacto/">
+                
+                <span>Contacto</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/blogdani/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+	<div class="catalogue">
+		
+			<a href="http://localhost:1313/blogdani/posts/mongo/" class="catalogue-item">
+    <div>
+        <time datetime="2025-10-09 12:17:59 &#43;0200 CEST" class="catalogue-time">October 9, 2025</time>
+        <h2 class="catalogue-title">Instalación Mongo</h2>
+        <div class="catalogue-line"></div>
+
+        <p>
+            Actualmente, el soporte de MongoDB se extiende hasta Debian 12 de forma oficial, sin embargo, su instalación en Debian 13 no tiene compromisos. Lo primero que debemos hacer es cargar la clave pública y los repositorios de Mongo:
+wget -qO- https://www.mongodb.org/static/pgp/server-8.0.asc | sudo tee /etc/apt/trusted.gpg.d/server-8.0.asc echo &#34;deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main&#34; | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list Después, instalaremos el paquete mongodb-org que incluye tanto la base de datos como otros paquetes que nos serán útiles:
+        </p>
+    </div>
+</a>
+
+		
+			<a href="http://localhost:1313/blogdani/posts/mariadb/" class="catalogue-item">
+    <div>
+        <time datetime="2025-10-03 20:01:06 &#43;0200 CEST" class="catalogue-time">October 3, 2025</time>
+        <h2 class="catalogue-title">Instalación MariaDB</h2>
+        <div class="catalogue-line"></div>
+
+        <p>
+            MariaDB también se encuentra en los repositorios de Debian, por lo que se instala solo con: sudo apt install mariadb-server Tras su instalación, ejecutamos un script post-instalación para modificar la contraseña del usuario &lsquo;root&rsquo; de MariaDB: sudo mariadb-secure-installation
+Para acceder al programa como &lsquo;root&rsquo; usamos: mariadb -u root -p Desde ahí ya podremos crear bases de datos y usuarios.
+        </p>
+    </div>
+</a>
+
+		
+			<a href="http://localhost:1313/blogdani/posts/postgres/" class="catalogue-item">
+    <div>
+        <time datetime="2025-10-03 20:01:03 &#43;0200 CEST" class="catalogue-time">October 3, 2025</time>
+        <h2 class="catalogue-title">Instalación PostgreSQL</h2>
+        <div class="catalogue-line"></div>
+
+        <p>
+            PostgreSQL se encuentra en los repositorios de Debian, por lo que su instalación se minimiza enormemente a: sudo apt install postgresql
+Una vez instalado, sobre la marcha, debemos ingresar al programa con el usuario &lsquo;postgres&rsquo; y modificar su contraseña. Este paso es necesario en este punto, de realizarlo más adelante o tras un reinicio, puede que perdamos el acceso a dicho usuario y no podamos configurar el programa. Para acceder usaremos: sudo -u postgres psql
+        </p>
+    </div>
+</a>
+
+		
+			<a href="http://localhost:1313/blogdani/contacto/" class="catalogue-item">
+    <div>
+        <time datetime="2025-10-03 19:58:21 &#43;0200 CEST" class="catalogue-time">October 3, 2025</time>
+        <h2 class="catalogue-title">Contacto</h2>
+        <div class="catalogue-line"></div>
+
+        <p>
+            Sitios donde puedes encontrarme.
+Email: danibacorro@gmail.com GitHub: danibacorro Moodle: Dani Baco 
+        </p>
+    </div>
+</a>
+
+		
+	</div>
+
+	<div class="pagination">
+		
+		
+
+		<span>1</span>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2025-10-09 13:31:52.485782425 &#43;0200 CEST m=&#43;0.048246283">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

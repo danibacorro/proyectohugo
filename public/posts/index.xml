@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog de Dani</title>
+    <link>http://localhost:1313/blogdani/posts/</link>
+    <description>Recent content in Posts on Blog de Dani</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 09 Oct 2025 12:17:59 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/blogdani/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación Mongo</title>
+      <link>http://localhost:1313/blogdani/posts/mongo/</link>
+      <pubDate>Thu, 09 Oct 2025 12:17:59 +0200</pubDate>
+      <guid>http://localhost:1313/blogdani/posts/mongo/</guid>
+      <description>Actualmente, el soporte de MongoDB se extiende hasta Debian 12 de forma oficial, sin embargo, su instalación en Debian 13 no tiene compromisos. Lo primero que debemos hacer es cargar la clave pública y los repositorios de Mongo:&#xA;wget -qO- https://www.mongodb.org/static/pgp/server-8.0.asc | sudo tee /etc/apt/trusted.gpg.d/server-8.0.asc echo &amp;#34;deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/debian bookworm/mongodb-org/8.0 main&amp;#34; | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list Después, instalaremos el paquete mongodb-org que incluye tanto la base de datos como otros paquetes que nos serán útiles:</description>
+    </item>
+    <item>
+      <title>Instalación MariaDB</title>
+      <link>http://localhost:1313/blogdani/posts/mariadb/</link>
+      <pubDate>Fri, 03 Oct 2025 20:01:06 +0200</pubDate>
+      <guid>http://localhost:1313/blogdani/posts/mariadb/</guid>
+      <description>MariaDB también se encuentra en los repositorios de Debian, por lo que se instala solo con: sudo apt install mariadb-server Tras su instalación, ejecutamos un script post-instalación para modificar la contraseña del usuario &amp;lsquo;root&amp;rsquo; de MariaDB: sudo mariadb-secure-installation&#xA;Para acceder al programa como &amp;lsquo;root&amp;rsquo; usamos: mariadb -u root -p Desde ahí ya podremos crear bases de datos y usuarios.</description>
+    </item>
+    <item>
+      <title>Instalación PostgreSQL</title>
+      <link>http://localhost:1313/blogdani/posts/postgres/</link>
+      <pubDate>Fri, 03 Oct 2025 20:01:03 +0200</pubDate>
+      <guid>http://localhost:1313/blogdani/posts/postgres/</guid>
+      <description>PostgreSQL se encuentra en los repositorios de Debian, por lo que su instalación se minimiza enormemente a: sudo apt install postgresql&#xA;Una vez instalado, sobre la marcha, debemos ingresar al programa con el usuario &amp;lsquo;postgres&amp;rsquo; y modificar su contraseña. Este paso es necesario en este punto, de realizarlo más adelante o tras un reinicio, puede que perdamos el acceso a dicho usuario y no podamos configurar el programa. Para acceder usaremos: sudo -u postgres psql</description>
+    </item>
+  </channel>
+</rss>

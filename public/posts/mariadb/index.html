@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head><script src="/blogdani/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blogdani/livereload" data-no-instant defer></script>
+		
+		
+  
+
+
+		
+		<meta property="og:url" content="http://localhost:1313/blogdani/posts/mariadb/">
+  <meta property="og:site_name" content="Blog de Dani">
+  <meta property="og:title" content="Instalación MariaDB">
+  <meta property="og:description" content="MariaDB también se encuentra en los repositorios de Debian, por lo que se instala solo con: sudo apt install mariadb-server Tras su instalación, ejecutamos un script post-instalación para modificar la contraseña del usuario ‘root’ de MariaDB: sudo mariadb-secure-installation
+Para acceder al programa como ‘root’ usamos: mariadb -u root -p Desde ahí ya podremos crear bases de datos y usuarios.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-03T20:01:06+02:00">
+    <meta property="article:modified_time" content="2025-10-03T20:01:06+02:00">
+
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Instalación MariaDB &middot; Blog de Dani</title>
+
+		
+		<link rel="stylesheet" href="/blogdani/css/style.css">
+		<link rel="stylesheet" href="/blogdani/css/fonts.css">
+		
+		<link rel="icon" href="/blogdani/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/blogdani/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/blogdani/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/blogdani/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Blog de Dani" />
+
+		<script src="/blogdani/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/blogdani/">
+					
+						<h2 class="nav-title">Blog de Dani</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/blogdani/contacto/">
+                
+                <span>Contacto</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/blogdani/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="2025-10-03 20:01:06 &#43;0200 CEST">October 3, 2025</time>
+</div>
+
+		<h1 class="post-title">Instalación MariaDB</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>MariaDB también se encuentra en los repositorios de Debian, por lo que se instala solo con:
+<code>sudo apt install mariadb-server</code>
+Tras su instalación, ejecutamos un script post-instalación para modificar la contraseña del usuario &lsquo;root&rsquo; de MariaDB:
+<code>sudo mariadb-secure-installation</code></p>
+<p>Para acceder al programa como &lsquo;root&rsquo; usamos:
+<code>mariadb -u root -p</code>
+Desde ahí ya podremos crear bases de datos y usuarios.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/blogdani/posts/postgres/" class="left arrow">&#8592;</a>
+		<a href="/blogdani/posts/mongo/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2025-10-09 13:31:52.485800448 &#43;0200 CEST m=&#43;0.048264306">2025</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
