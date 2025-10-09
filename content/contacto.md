@@ -8,4 +8,4 @@ Sitios donde puedes encontrarme.
 
 - Email: danibacorro@gmail.com
 - GitHub: danibacorro
-- Moodle: Dani Baco
+- Moodle: Daniel Baco
