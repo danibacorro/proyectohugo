@@ -5,3 +5,4 @@ draft = false
 +++
 
 Daniel Baco de Besa, 30 de octubre de 2025.
+Falta la imagen.
